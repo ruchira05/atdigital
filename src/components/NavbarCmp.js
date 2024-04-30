@@ -16,7 +16,7 @@ function NavbarCmp() {
     <Navbar collapseOnSelect className="navbar" sticky='top' expand="md">
       <Container>
         {/* navbar logo */}
-        <Navbar.Brand href="/"><img className='nav-logo img-fluid' src={logo}></img></Navbar.Brand>
+        <Navbar.Brand href="/"><img className='nav-logo img-fluid' src={logo} alt='Logo'></img></Navbar.Brand>
         {/* togle button */}
         <button class=" nav-button custom-toggler navbar-toggler" 
         type="button" 

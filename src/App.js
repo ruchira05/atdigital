@@ -21,7 +21,7 @@ function App() {
       {/* Hero Section */}
       <Row>
         <figure>
-          <img  src={heroImg} className='img-fluid'></img>
+          <img  src={heroImg} className='img-fluid' alt='hearoImage'></img>
           <figcaption className='fig-caption box'>
             <div className="hero-font">
             We crush your competitors, goals, and sales records - without the B.S.
@@ -38,7 +38,7 @@ function App() {
       <Row className='body-row' md={2} sm={1} xs={1}>
         <Col className='d-flex justify-content-centerd-flex justify-content-center align-items-center'>
         <figure>
-          <img src={imgPc} className='img-fluid'></img>
+          <img src={imgPc} className='img-fluid' alt='pcimage'></img>
         </figure> 
         </Col>
 
@@ -67,7 +67,7 @@ function App() {
 
       <Col className='d-flex justify-content-centerd-flex justify-content-center align-items-center'>
         <figure>
-          <img src={imgSearch} className='img-fluid'></img>
+          <img src={imgSearch} className='img-fluid' alt='Search'></img>
         </figure> 
         </Col>
 
