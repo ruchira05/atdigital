@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+/* override row style */
+.row>* {
+    padding:0px !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* override container style */
+.container{
+    --bs-gutter-x: 0rem !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* styles for the box with gradient */
+.box {
+    width: 630px;
+    height: auto;
+    position: absolute;
+    background-image: linear-gradient(to left , #1CBDDD    , #4DCA79);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* styles for the fig caption */
+.fig-caption{
+    transform: translateY(-23rem);
+    margin-left: 80px;
+    position:absolute;
+    z-index: 10;
+    padding: 37px 37px 37px 37px;
 }
 
-.App-link {
-  color: #61dafb;
+/* styles for the hero font */
+.hero-font{
+    font-family: Inter;
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.02em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* sody content margin top */
+.body-content{
+    margin-top: 100px;
+}
+
+/* sadding for body row */
+.body-row{
+    padding:0px 150px 0px 150px !important;
+}
+
+/* styles for heading text */
+.text-header{
+    margin-bottom: 20px;
+    color: #6B3CC9;
+    font-family: Poppins;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 33px;
+    letter-spacing: 0.4000000059604645px;
+}
+
+/* styles for text container */
+#text-container{
+    padding-top: 100px;
+}
+
+/* styles for body text */
+.text-body{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+}
+
+/* styles for smalle screens */
+@media screen and (max-width : 768px){
+    .body-content{
+        margin-top: inherit;
+    }
+    #text-container{
+        padding-top: 10px !important;
+        text-align: center;
+    }
+    .body-row{
+        padding:0px 50px 0px 50px !important;
+    }
+}
+
+/* styles for smalle screens */
+@media screen and (max-width : 1199px){
+    .fig-caption{
+        margin-left: inherit;
+        position: inherit;
+        bottom: inherit;
+        transform: inherit;
+    }
+    .box {
+        width: 100%;
+        height: 258;
+    }
+}
+
+/* styles for smalle screens */
+@media (max-width: 375px) {
+    .hero-font{
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .text-header{
+        font-size: 18px;
+        line-height: inherit;
+    }
 }

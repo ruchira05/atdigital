@@ -1,0 +1,44 @@
+/* FAQ component style */
+
+/* styling for the drop-down container */
+.drop_down {
+    height: auto;
+    background-color: #FAF8FF;
+    margin: 10px 10% 10px 10%;
+    transition: background-color 0.3s, transform 0.3s;
+    &:hover{
+        transform: scale(1.01);
+    }
+}
+
+/* styling when the drop-down is active */
+.drop_down:active {
+    transform: scale(0.995); 
+    background-color: #e7e0f9; 
+}
+
+/* styling for the heading text */
+.head_text {
+    font-family: Inter;
+    font-size: 22px; 
+    font-weight: 500; 
+    line-height: 28px; 
+    text-align: left;
+    margin: 20px 20px 20px 20px;
+}
+
+/* Styling for the body text */
+.body_text {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400; 
+    line-height: 30px; 
+    text-align: left; 
+    color: #6F6C90; 
+    margin: 10px 40px 10px 30px; 
+}
+
+/* Styling for clicked elements */
+.clicked {
+    color: #6B3CC9; 
+}

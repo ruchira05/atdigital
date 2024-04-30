@@ -1,0 +1,39 @@
+/* styles for the button */
+.yellow_btn {
+    height: 38px;
+    padding: 0px 20px 0px 20px;
+    text-align: center;
+    border-radius: 4px;
+    border: none;
+    background-color: #F28D35;
+    color: #ffffff;
+    font-family: Inter;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.3s;
+    &:hover{
+      transform: scale(1.05);
+    }
+  }
+  
+  /* active styles for the button */
+  .yellow_btn:active {
+    background-color: #D7750B;
+    transform: scale(0.99);
+  }
+  
+  /* styles for the button container */
+  .btn {
+    margin: 25px 0px 0px 0px;
+  }
+  
+  /* styles for smaller screens */
+  @media (max-width: 768px) {
+    .yellow_btn {
+      padding: 0px 10px;
+      font-size: 12px;
+    }
+  }
+  
+  

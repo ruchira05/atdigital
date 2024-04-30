@@ -1,0 +1,104 @@
+/* NavbarCmp.module.css */
+
+/* nav items */
+.nav-link {
+  font-size: 14px;
+  color: #FFFFFF;
+  margin: 0px 5px 8px 5px;
+  transition: background-color 0.3s, transform 0.3s;
+
+}
+
+.nav-link-black {
+font-size: 14px;
+color: #000000;
+&:active{
+  transform: scale(0.97);
+}
+}
+.nav-link:focus, .nav-link:hover {
+  color: #ffffffb1;
+  transform: scale(1.05);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+color: #FFFFFF;
+background: linear-gradient(to left, #ffffff93, #ffffff 100%);
+background-position: 0 90%;
+background-size: 100% 2px;
+background-repeat: repeat-x;
+&:active{
+  transform: scale(0.97);
+  opacity: 70%;
+}
+}
+
+/* logo */
+.nav-logo {
+margin: 5px 5px 10px 0px;
+height: 36px;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* navbar background */
+.navbar {
+background-color: #6B3CC9;
+}
+
+.nav-toggle-icon {
+display: inline-block;
+width: 1.5em;
+height: 1.5em;
+vertical-align: middle;
+background-image: url(../images/toggle-icon.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: 100%;
+color: #FFFFFF;
+}
+
+/* nav toggle button */
+.nav-button {
+background-color: transparent;
+border: none;
+transition: all .3s;
+}
+
+.nav-button:active {
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+transform: scale(0.9);
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  }
+
+/* offcanvas */
+.offcanvas-body {
+transform: translateY(-50px);
+}
+.btn-close {
+  z-index: 1;
+  opacity: 100%;
+}
+.btn-close:active {
+border: none;
+box-shadow: none;
+transform: scale(0.8);
+}
+
+.offcanvas-full {
+width: 100%;
+height: 100%;
+}
+
+.offcanvas-text {
+color: #100C08;
+}
+.offcanvas.offcanvas-end{
+  width: -webkit-fill-available;
+}

@@ -1,0 +1,106 @@
+
+/* fooret style */
+
+/* list remove decorations */
+ul{
+    list-style-type: none;
+    padding: 0;
+    
+}
+li{
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+
+    &:hover{
+        transform: scale(1.05);
+        transition: background-color 0.3s, transform 0.3s;
+        cursor:default;
+    }
+}
+.botm{
+    transition: background-color 0.3s, transform 0.3s;
+    &:hover{
+        transform: scale(1.05);
+        transition: background-color 0.3s, transform 0.3s;
+        cursor:default;
+}}
+
+.footer_text_inter{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.94px;
+    color: #ffffff;
+}
+.container_row_style{
+    margin-top: 50px;
+    padding: 40px;
+    background-color: #6B3CC9;
+}
+.col_padding{
+    padding: 0px 60px 0px 40px !important;
+}
+.footer_img{
+    width: 238.89px;
+
+}
+.footer_logo{
+    margin: 5px 5px 10px 0px;
+  height: 36px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.footer_text{
+    margin: 10px 0px 10px 0px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    color: #ffffff;
+}
+.footer_head{
+    font-family: Inter;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 25.41px;
+    text-align: left;
+    color: #ffffff;
+}
+.footer_list{
+    padding-left: 100px !important;
+    padding-right: 20px !important;
+}
+.footer_line{
+    width: 95%;
+    margin-top: 30px !important;
+}
+.separator {
+    display: inline-block;
+    margin: 0px 20px 0px 20px;
+  }
+
+  /* style changes when screen is too small */
+@media screen and (max-width : 1199px) {
+    .footer_list{
+        padding-left: 40px !important;
+        padding-right: 20px !important;
+        margin-top: 50px;
+    }
+    
+}
+@media screen and (max-width : 767px) {
+    .footer_list{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        margin-top: 20px;
+    }
+    .col_padding{
+        padding: 0px 0px 0px 0px !important;
+    }
+    .row>* {
+        padding: 0px !important;
+    }
+}
+  
